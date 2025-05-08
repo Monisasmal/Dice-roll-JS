@@ -1,0 +1,96 @@
+/* Basic reset and styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+/* Container for center content */
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Title styling */
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+/* Dice display styling */
+#dice {
+  font-size: 100px;
+  margin: 20px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Button styling */
+#roll-button {
+  background-color: #4aaed8;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+/* Roll button hover effect */
+#roll-button:hover {
+  background-color: #3a94bb;
+}
+
+
+
+/* Roll history styling */
+#roll-history {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#roll-history li {
+  background: #dadbdb;
+  border-left: 6px solid #4aaed8;
+  padding: 12px 18px;
+  font-size: 18px;
+  text-align: left;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background 0.3s ease;
+}
+
+#roll-history li:hover {
+  background: #e2f1fb;
+}
+
+#roll-history li span {
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+/* Animation class for dice */
+.roll-animation {
+  animation: shake 0.5s;
+}
+
+/* Keyframes for dice shake effect */
+@keyframes shake {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(15deg); }
+  50%  { transform: rotate(-15deg); }
+  75%  { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
