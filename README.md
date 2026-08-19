@@ -7,3 +7,6 @@
 
 
 👉 Portfolio - https://manaswini-portfolio.vercel.app/ https://monisasmal.github.io/book/
+
+
+LinkedIn - https://www.linkedin.com/in/manaswini-sasmal-b77a21162/
